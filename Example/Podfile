@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'AudioPlayer_Example' do
+  pod 'AudioPlayer', :path => '../'
+
+  target 'AudioPlayer_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
