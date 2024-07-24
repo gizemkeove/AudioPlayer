@@ -1,0 +1,27 @@
+PODS:
+  - AudioPlayer (0.1.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+
+DEPENDENCIES:
+  - AudioPlayer (from `../`)
+  - FBSnapshotTestCase (~> 2.1.4)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  AudioPlayer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AudioPlayer: 87581d5baa36c183eae998d9cf8542aad8f22529
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+
+PODFILE CHECKSUM: 32e1c0d7752bce0dc39739f10c41383e4b6d506d
+
+COCOAPODS: 1.15.2

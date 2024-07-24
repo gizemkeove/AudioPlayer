@@ -1,0 +1,22 @@
+{
+  "name": "AudioPlayer",
+  "version": "0.1.0",
+  "summary": "A short description of AudioPlayer.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/gizem sahin/AudioPlayer",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "gizem sahin": "gizem.sahin@keove.com"
+  },
+  "source": {
+    "git": "https://github.com/gizem sahin/AudioPlayer.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "AudioPlayer/Classes/**/*"
+}

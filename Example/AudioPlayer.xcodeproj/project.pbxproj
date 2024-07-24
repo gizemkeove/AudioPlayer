@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		01D8FC7770665B0E5C818DB3 /* Pods-AudioPlayer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioPlayer_Tests.release.xcconfig"; path = "Target Support Files/Pods-AudioPlayer_Tests/Pods-AudioPlayer_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		17F46749082FDC17BB63D8EB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		17F46749082FDC17BB63D8EB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3088EB7C35CC0A045AEDA0E5 /* Pods-AudioPlayer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioPlayer_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AudioPlayer_Tests/Pods-AudioPlayer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		316D1028FDBFF1F8CF85D579 /* Pods-AudioPlayer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioPlayer_Example.release.xcconfig"; path = "Target Support Files/Pods-AudioPlayer_Example/Pods-AudioPlayer_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AudioPlayer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioPlayer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,9 +44,9 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6BDECEC95CED40645FB32829 /* Pods-AudioPlayer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioPlayer_Example.debug.xcconfig"; path = "Target Support Files/Pods-AudioPlayer_Example/Pods-AudioPlayer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		822FEA11B19BC822932CB65E /* Pods_AudioPlayer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioPlayer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA68C111E9BA4B7D784F7FCC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DA68C111E9BA4B7D784F7FCC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E0875DD6C8B46A0CEAEB7920 /* Pods_AudioPlayer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioPlayer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F322270B405ABFE0D33AC31A /* AudioPlayer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AudioPlayer.podspec; path = ../AudioPlayer.podspec; sourceTree = "<group>"; };
+		F322270B405ABFE0D33AC31A /* AudioPlayer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AudioPlayer.podspec; path = ../AudioPlayer.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,6 @@
 				3088EB7C35CC0A045AEDA0E5 /* Pods-AudioPlayer_Tests.debug.xcconfig */,
 				01D8FC7770665B0E5C818DB3 /* Pods-AudioPlayer_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
