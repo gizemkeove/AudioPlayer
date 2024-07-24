@@ -1,9 +1,9 @@
 {
   "name": "AudioPlayer",
   "version": "0.1.0",
-  "summary": "A short description of AudioPlayer.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/gizem sahin/AudioPlayer",
+  "summary": "A library to play m3u8 audio files with support for forward, backward, next, and previous actions, and handle playlists.",
+  "description": "AudioPlayer is a library designed to play m3u8 audio files. It supports features such as forward, backward, next, and previous actions. The library is optimized for smooth operation when the application is in the foreground and can handle both single m3u8 files and playlists.",
+  "homepage": "https://github.com/gizemkeove/AudioPlayer.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,12 @@
     "gizem sahin": "gizem.sahin@keove.com"
   },
   "source": {
-    "git": "https://github.com/gizem sahin/AudioPlayer.git",
+    "git": "https://github.com/gizemkeove/AudioPlayer.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "AudioPlayer/Classes/**/*"
+  "source_files": "AudioPlayer/Classes/**/*",
+  "frameworks": "UIKit"
 }
