@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AudioPlayer'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A library to play m3u8 audio files with support for forward, backward, next, and previous actions, and handle playlists.'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/gizemkeove/AudioPlayer.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'AudioPlayer/Classes/**/*'
   
@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit' #, 'MapKit'
+  s.frameworks = 'UIKit', 'AVFoundation' #, 'MapKit'
   #s.dependency 'AFNetworking', '~> 2.3'
   #s.dependency 'RealmSwift', '~> 2.3'
 end

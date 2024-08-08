@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,13 +17,126 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mic" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="j07-kb-UiC">
+                                <rect key="frame" x="57.666666666666657" y="186.66666666666669" width="275" height="199.66666666666669"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="6GL-Rt-vcw"/>
+                                    <constraint firstAttribute="width" constant="275" id="9E4-yz-fDC"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9dr-c5-y8B">
+                                <rect key="frame" x="36" y="407" width="318" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVR-v6-SD5">
+                                        <rect key="frame" x="0.0" y="0.0" width="53" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="backward.end" catalog="system" title=" "/>
+                                        <connections>
+                                            <action selector="previousTrackButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DlJ-vv-JVR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vgh-DE-jdw">
+                                        <rect key="frame" x="53" y="0.0" width="53" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="backward" catalog="system" title=" "/>
+                                        <connections>
+                                            <action selector="backwardButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="AQg-2c-rRT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1H-Ck-gFa">
+                                        <rect key="frame" x="106" y="0.0" width="53" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="pause" catalog="system" title=" "/>
+                                        <connections>
+                                            <action selector="pauseButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="npp-fP-gDv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cF0-ga-eTS">
+                                        <rect key="frame" x="159" y="0.0" width="53" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="play" catalog="system" title=" "/>
+                                        <connections>
+                                            <action selector="playButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5eE-67-iQI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybb-N9-CiF">
+                                        <rect key="frame" x="212" y="0.0" width="53" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="forward" catalog="system" title=" "/>
+                                        <connections>
+                                            <action selector="forwardButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OC6-yf-n6t"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keu-MO-baE">
+                                        <rect key="frame" x="265" y="0.0" width="53" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="forward.end" catalog="system" title=" "/>
+                                        <connections>
+                                            <action selector="nextTrackButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QOV-YQ-vnD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="J9o-2Q-Wtg"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g1R-BT-lbc">
+                                <rect key="frame" x="36" y="472" width="323" height="60"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="M4G-qm-pHs">
+                                        <rect key="frame" x="-2" y="0.0" width="269" height="61"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="265" id="Xt4-CA-VpQ"/>
+                                        </constraints>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02.45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPv-MB-FyA">
+                                        <rect key="frame" x="265" y="0.0" width="58" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="linkColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="W4C-rm-JCf"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="g1R-BT-lbc" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="9kc-I3-0sQ"/>
+                            <constraint firstItem="j07-kb-UiC" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="EYa-7d-rcu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="g1R-BT-lbc" secondAttribute="trailing" constant="15" id="KTK-PO-uaf"/>
+                            <constraint firstItem="9dr-c5-y8B" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="PYm-nz-YE7"/>
+                            <constraint firstItem="g1R-BT-lbc" firstAttribute="top" secondItem="9dr-c5-y8B" secondAttribute="bottom" constant="15" id="RVX-pO-D35"/>
+                            <constraint firstItem="9dr-c5-y8B" firstAttribute="top" secondItem="j07-kb-UiC" secondAttribute="bottom" constant="20" id="YiN-X8-vwK"/>
+                            <constraint firstItem="j07-kb-UiC" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="140" id="uyV-Qc-vHU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9dr-c5-y8B" secondAttribute="trailing" constant="20" id="xki-FH-ksd"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="TrackSlider" destination="M4G-qm-pHs" id="yo8-29-azR"/>
+                        <outlet property="timeLabel" destination="LPv-MB-FyA" id="M5M-wQ-Yn0"/>
+                        <outlet property="trackImage" destination="j07-kb-UiC" id="lxR-LH-Imj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="120" y="-2.1327014218009479"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="backward" catalog="system" width="128" height="77"/>
+        <image name="backward.end" catalog="system" width="128" height="120"/>
+        <image name="forward" catalog="system" width="128" height="77"/>
+        <image name="forward.end" catalog="system" width="128" height="120"/>
+        <image name="mic" catalog="system" width="110" height="128"/>
+        <image name="pause" catalog="system" width="88" height="128"/>
+        <image name="play" catalog="system" width="117" height="128"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
