@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AudioPlayer'
-  s.version          = '0.1.1'
+  s.version          = '1.0.2'
   s.summary          = 'A library to play m3u8 audio files with support for forward, backward, next, and previous actions, and handle playlists.'
 
 # This description is used to generate tags and improve search results.
